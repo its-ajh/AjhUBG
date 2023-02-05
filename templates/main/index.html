@@ -1,0 +1,24 @@
+{% extends "main/base.html" %}
+{% block content %}
+<h1>Welcome to Ajh Fun 2</h1>
+<p>Here we are, the brand new Ajh Fun 2!<br>
+This is both Ajh Fun and NBJG's predacessor which is better than ever.
+</p><br>
+
+<div id="a">
+
+<h1>All Games</h1>
+<div class="flex-wrap">
+  {% for data in data %}
+  <div class="card col-md-2 col-sm-10 p-3 text-center">
+    
+    <a href="{% url "game" data.id%}">
+    <img src="{{ data.icon }}" stydata="max-width:100%;" />
+    <h4 class="mt-2">{{data.name}}</h4>
+    </a>
+    
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}
