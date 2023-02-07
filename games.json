@@ -1,24 +1,100 @@
-
  [
     {
-        "name": "Fireboy and Watergirl",
-        "url": "https://y8.com/embed/the_forest_temple",
-        "icon": "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x512.jpeg",
-        "notes": "A game hhh",
-        "id": 0
+        "name": "Slope",
+        "url": "https://slope.ajh499.repl.co/",
+        "icon": "/static/images/slope.png",
+        "notes": "",
+      "id": 0
     },
     {
-        "name": "Slope",
-        "url": "https://y8.com/embed/slope",
-        "icon": "https://play-lh.googleusercontent.com/uJn2i9h7KxYQarC_c3K4qH6o7gLtflFnhD_dN14MNkzHJ1NeNFzCL69jpB5mT0vCoQs",
-        "notes": "A game hhh",
+        "name": "Vex 6",
+        "url": "https://yexex.github.io/vex/index.html",
+        "icon": "/static/images/vex6.png",
+        "notes": "",
       "id": 1
     },
     {
-        "name": "Vex 4",
-        "url": "https://y8.com/embed/vex_4",
-        "icon": "https://img.gamedistribution.com/80e6a5ae477f4d4fbcd1ea293d10087d-512x512.jpeg",
-        "notes": "A game hhh",
+        "name": "1v1.lol",
+        "url": "https://yexex.github.io/lol/index.html",
+        "icon": "/static/images/1v1lol.png",
+        "notes": "",
       "id": 2
+    },
+    {
+        "name": "Tunnel Rush",
+        "url": "https://yexex.github.io/bob/bob.html",
+        "icon": "/static/images/tunnelrush.png",
+        "notes": "",
+      "id": 3
+    },
+    {
+        "name": "Stack",
+        "url": "https://fungames.pages.dev/games/Stack/stack",
+        "icon": "/static/images/stack.png",
+        "notes": "",
+      "id": 4
+    },
+    {
+        "name": "Run 3",
+        "url": "https://yexex.github.io/run3/index.html",
+        "icon": "/static/images/run3.png",
+        "notes": "",
+      "id": 5
+    },
+    {
+        "name": "Rooftop Snipers",
+        "url": "https://r00ftop-sn1p3r5.ajh499.repl.co/",
+        "icon": "/static/images/rooftopsnipers.png",
+        "notes": "",
+      "id": 6
+    },
+    {
+        "name": "Basketball Stars",
+        "url": "https://yexex.github.io/basketball-stars/index.html",
+        "icon": "/static/images/basketballstars.png",
+        "notes": "",
+      "id": 7
+    },
+    {
+        "name": "Fruit Ninja",
+        "url": "https://fruit-ninja.firefrog36.repl.co/",
+        "icon": "/static/images/fruitninja.png",
+        "notes": "",
+      "id": 8
+    },
+    {
+        "name": "Cookie Clicker",
+        "url": "https://cookieclicker.ajh499.repl.co/",
+        "icon": "/static/images/cookieclicker.png",
+        "notes": "",
+      "id": 9
+    },
+    {
+        "name": "Galaga",
+        "url": "http://cykod.github.io/AlienInvasion/",
+        "icon": "/static/images/galaga.png",
+        "notes": "",
+      "id": 10
+    },
+    {
+        "name": "Astray",
+        "url": "https://astray.ajh499.repl.co/",
+        "icon": "/static/images/astray.png",
+        "notes": "",
+      "id": 11
+    },
+    {
+        "name": "2048",
+        "url": "https://2048.ajh499.repl.co",
+        "icon": "/static/images/2048.png",
+        "notes": "",
+      "id": 12
+    },
+    {
+        "name": "Candybox 2",
+        "url": "https://candybox2.github.io/",
+        "icon": "/static/images/candybox2.png",
+        "notes": "",
+      "id": 13
     }
-  ]
+ ]

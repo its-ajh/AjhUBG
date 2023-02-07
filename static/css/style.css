@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
 html, body {
   height: 100%;
@@ -8,8 +9,19 @@ html, body {
   color: var(--text);
   background: var(--primary);
   margin: 0;
-  font-family: 'Hind Madurai', sans-serif;
+  font-family: 'Hind Madurai', sans-serif !important;
   scroll-behavior: smooth;
+}
+
+i {
+color: var(--text);
+font-size: 1em;
+}
+
+iframe {
+text-align: center;
+width: 20em;
+height: auto;
 }
 
 :root {
@@ -45,10 +57,21 @@ img {
 width: 10em;
 height: auto;
 border-radius: 1em;
-  margin: 1em;
+margin: 1em;
+transition: transform 0.2s ease-in-out;
+}
+
+img:hover, button:hover {
+transform: scale(1.1);
+}
+
+img:after, button:after {
+transform: scale(1);
 }
 
 nav {
+display: flex;
+align-items: center;
 padding: 1.1em;
 top: 0px;
 margin: 0px;
@@ -80,6 +103,16 @@ text-decoration: none;
 transition: color 0.5s ease;
 }
 
+.scrolldiv {
+width: 98%;
+border-radius: 1em;
+padding: 1em;
+height: 25em;
+overflow-x: hidden;
+overflow-y: auto;
+text-align: left;
+border: solid 2px var(--text);
+}
 nav > a:hover {
 color: var(--hyperlink-hover);
 transform: translateY(0em);
@@ -207,7 +240,10 @@ transform: rotate(0deg);
 footer {
 color: var(--text);
 text-align: center;
-padding: 1em;
+padding-top: 1em;
+padding-left: 1em;
+padding-right: 1em;
+padding-bottom: 0.2em;
 }
 
 
@@ -215,4 +251,54 @@ padding: 1em;
   gap: 1em;
  display:flex;
   flex-wrap: wrap;
+}
+.button {
+  padding: 1em;
+  border-radius:1em;
+  color:#ffff;
+  border:none;
+  background: var(--secondary);
+  transition: transform 0.2s ease-in-out;
+}
+
+.my-1{
+margin-top:1em;
+margin-bottom:1em;
+}
+.fullScreen {
+    width: 100%;
+    height: 100% !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+  z-index: 1;
+}
+
+.searchbar {
+background: var(--secondary);
+color: var(--text);
+padding: 1em;
+border: solid 2px var(--text);
+font-family: 'Hind Madurai', sans-serif;
+border-radius: 1em;
+transition: border 0.2s ease-in-out;
+}
+
+.searchbar:hover {
+border: solid 2px var(--hyperlink-hover);
+}
+
+.searchbar:after {
+border: solid 2px var(--text);
+}
+
+.searchbar:focus {
+outline: none;
+}
+
+.searchbar > input {
+  padding: 1em;
+  border-radius: 1em;
+  background: var(--secondary);
+  font-size: 0.8em;
 }

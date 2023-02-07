@@ -24,4 +24,7 @@ urlpatterns = [
   path("", Index.as_view()),
   path("<int:pk>", Detail.as_view(), name="game"),
   re_path(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
+  path("changelog/", Changelog.as_view()),
+  path('search/', Search.as_view(), name='search'),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
