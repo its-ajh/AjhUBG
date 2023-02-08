@@ -96,5 +96,68 @@
         "icon": "/static/images/candybox2.png",
         "notes": "",
       "id": 13
+    },
+    {
+        "name": "Jstris",
+        "url": "https://jstris.jezevec10.com/",
+        "icon": "/static/images/jstris.png",
+        "notes": "",
+      "id": 14
+    },
+    {
+        "name": "Basket Bros",
+        "url": "https://dunkbros.org/",
+        "icon": "/static/images/basketbros.png",
+        "notes": "",
+      "id": 15
+    },
+    {
+        "name": "3d.city",
+        "url": "http://lo-th.github.io/3d.city/",
+        "icon": "/static/images/3dcity.png",
+        "notes": "",
+      "id": 16
+    },
+    {
+        "name": "buk",
+        "url": "https://industrial-revolutioners.github.io/buk/",
+        "icon": "/static/images/buk.png",
+        "notes": "",
+      "id": 17
+    },
+    {
+        "name": "Alge's Escapade",
+        "url": "http://dave-and-mike.github.io/game-off-2012/",
+        "icon": "/static/images/algesescapade.png",
+        "notes": "",
+      "id": 18
+    },
+    {
+        "name": "Hextris",
+        "url": "https://hextris.github.io/hextris",
+        "icon": "/static/images/hextris.png",
+        "notes": "",
+      "id": 19
+    },
+    {
+        "name": "A Small World Cup",
+        "url": "https://www.ocigames.com/juegos/a-small-world-cup/a-small-world-cup-fullscreen",
+        "icon": "/static/images/asmallworldcup.png",
+        "notes": "",
+      "id": 20
+    },
+    {
+        "name": "Retro Bowl",
+        "url": "https://yexex.github.io/retro-bowl/retro.html",
+        "icon": "/static/images/retrobowl.png",
+        "notes": "",
+      "id": 21
+    },
+    {
+        "name": "Moto X3M",
+        "url": "https://yexex.github.io/motox3m/index.html",
+        "icon": "/static/images/motox3m.png",
+        "notes": "",
+      "id": 22
     }
  ]

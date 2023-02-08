@@ -1,6 +1,12 @@
+# 8 February 2023
+* Added Moto X3M, Retro Bowl, A Small World Cup
+
 # 7 February 2023
+### Alpha 0.4.5
+* Shrunk down game images
+* Added 3d.city, Hextris, Alge's Escapade, buk
 ### Alpha 0.4.0
-* Added Galaga, Astray, 2048, Candybox 2
+* Added Galaga, Astray, 2048, Candybox 2, Jstris, Basket Bros
 
 # 6 February 2023
 ### Alpha 0.3.5

@@ -32,6 +32,17 @@ class Changelog(View):
     context = {
       "log": log
     }
+    return render(request, "main/links.html", context);
+    return render(request, "main/detail.html", context);
+class Changelog(View):
+  def get(self, request, *args, **kwargs):
+    # Opening JSON file
+    with open('links.md', 'r') as f:
+      tempMd= f.read()
+    log = markdown2.markdown(str(tempMd));
+    context = {
+      "log": log
+    }
     return render(request, "main/changelog.html", context);
 
 def chain(*iterables):
