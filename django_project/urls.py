@@ -26,5 +26,7 @@ urlpatterns = [
   re_path(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
   path("changelog/", Changelog.as_view()),
   path('search/', Search.as_view(), name='search'),
+  path('links/', Links.as_view(), name='search'),
+  path('accounts/', include('allauth.urls')),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

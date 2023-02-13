@@ -1,19 +1,19 @@
 {% extends "main/base.html" %}
 {% block content %}
-<h1>Search results</h1>
 
-<div id="a">
+<h1>Search results for {{query}}</h1>
 
-<div class="flex-wrap">
-{% for data in data %}
-  <div class="card col-md-2 col-sm-10 p-3 text-center">
-    {{data}}
-    <a >
-    <img src="{{ data.icon }}" stydata="max-width:100%;" />
-    <h4 class="mt-2">{{data.name}}</h4>
+
+
+<div id="gamewrapper">
+{% for data in data|dictsort:"name" %}
+  {% if query|lower in data.name|lower or query|lower in data.noteslower%}
+    <a href="{% url "game" data.id%}">
+    <img src="{{ data.icon }}" style="max-width:100%;" />
+    <h4 class="text-wrap">{{data.name|truncatechars:20}}</h4>
     </a>
-    
-  </div>
+  {% endif %}
 {% endfor %}
 </div>
+
 {% endblock %}

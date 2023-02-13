@@ -1,0 +1,26 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block head_title %}{% trans "Log in" %}{% endblock %}
+
+{% block content %}
+
+<h1>{% trans "Log in" %}</h1>
+
+{% get_providers as socialaccount_providers %}
+
+{% if socialaccount_providers %}
+<p>Please sign in to Ajh Fun 2 with one
+of your existing Google accounts.</p>
+
+<div class="socialaccount_ballot">
+
+    {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+</div>
+
+{% include "socialaccount/snippets/login_extra.html" %}
+{% endif %}
+
+{% endblock %}
