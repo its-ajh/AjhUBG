@@ -1,5 +1,9 @@
 # 13 February 2023
 
+### 1.1
+* Fixed login page not working
+* Fixed glitchy navigation bar
+
 ### 1.0 Release
 * Nothing here, just initial release since everything's ready.
 

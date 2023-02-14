@@ -264,5 +264,12 @@
         "icon": "/static/images/motox3m3.png",
         "notes": "",
       "id": 37
+    },
+    {
+        "name": "Geometry Dash",
+        "url": "https://turbowarp.org/105500895/fullscreen",
+        "icon": "/static/images/geometrydash.png",
+        "notes": "",
+      "id": 38
     }
  ]
