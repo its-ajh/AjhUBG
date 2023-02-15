@@ -1,0 +1,64 @@
+{% extends "main/base.html" %}
+{% load range %}
+{% block content %}
+
+
+<h1>{{ data.name }} <button style="border: none; background: none; color: var(--text); font-size: 0.8em;" onclick="fullscreen()"><i class="bi bi-arrows-fullscreen"></i></button></h1>
+{% if not user.is_authenticated %}
+
+<div class="login">
+  
+<svg width="187" height="156" viewBox="0 0 387 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M339.022 28.6873C333.132 8.7133 312.589 -3.10986 292.36 1.83169L263 9.00357V110.004H363L339.022 28.6873Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M275.048 5.00357C315.941 5.00357 350.79 34.6789 357.306 75.0492L386.386 220.223C389.33 238.463 375.246 255.004 356.77 255.004H330.857C306.781 255.004 294.5 247 279.602 215.492L260.766 178.914C258.454 170.127 250.51 164.004 241.424 164.004H195C168.49 164.004 147 142.513 147 116.004V53.0036C147 26.4939 168.49 5.00357 195 5.00357H270C270.851 5.00357 271.697 5.02572 272.537 5.06949C273.367 5.02574 274.204 5.00357 275.048 5.00357Z" fill="white"/>
+<path d="M263 73.0036C263 86.8107 274.193 98.0036 288 98.0036C301.807 98.0036 313 86.8107 313 73.0036C313 59.1965 301.807 48.0036 288 48.0036C274.193 48.0036 263 59.1965 263 73.0036Z" fill="black"/>
+<path d="M46.7547 28.6837C52.6444 8.70973 73.1874 -3.11343 93.4169 1.82811L122.777 9V110H22.7768L46.7547 28.6837Z" fill="black"/>
+<path d="M46.7547 28.9773C52.6444 9.00331 73.1874 -2.81985 93.4169 2.12169L122.777 9.29358V110.294H22.7768L46.7547 28.9773Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M111.729 5.29358C70.836 5.29358 35.9869 34.9689 29.471 75.3392L0.390307 220.513C-2.55368 238.753 11.531 255.294 30.007 255.294H55.9195C79.9958 255.294 92.2766 247.29 107.174 215.782L126.011 179.204C128.323 170.417 136.267 164.294 145.352 164.294H191.777C218.286 164.294 209.777 141.803 209.777 115.294V52.2936C209.777 25.7839 218.286 5.29358 191.777 5.29358H116.777C115.926 5.29358 115.08 5.31573 114.239 5.3595C113.409 5.31575 112.572 5.29358 111.729 5.29358Z" fill="white"/>
+<path d="M121.777 73.2936C121.777 87.1007 110.584 98.2936 96.7768 98.2936C82.9697 98.2936 71.7768 87.1007 71.7768 73.2936C71.7768 59.4865 82.9697 48.2936 96.7768 48.2936C110.584 48.2936 121.777 59.4865 121.777 73.2936Z" fill="black"/>
+<circle cx="97.7768" cy="73" r="25" fill="black"/>
+<rect x="136" y="101" width="20" height="50" rx="5" fill="black"/>
+<rect x="121" y="136" width="20" height="50" rx="5" transform="rotate(-90 121 136)" fill="black"/>
+<circle cx="214.223" cy="126" r="10" fill="#37AD00"/>
+<circle cx="214.223" cy="126" r="10" fill="#003E9A"/>
+<circle cx="254.223" cy="126" r="10" fill="#B60000"/>
+<circle cx="234.223" cy="144" r="10" fill="#003E9A"/>
+<circle cx="234.223" cy="144" r="10" fill="#37AD00"/>
+<circle cx="234.223" cy="108" r="10" fill="#AD9C00"/>
+</svg>
+
+<h1>Before You Play</h1>
+<p>Please sign in with Google.</p>
+<a class="button" href="/accounts/login">Sign in</a>
+</div>
+
+{%else%}
+
+<noscript>Please turn on JavaScript before you play</noscript>
+<iframe src="{{ data.url }}"  style="background: black;height: 80vh;display:block;
+    width:100%; border: none;" allow="allowfullscreen"></iframe>
+{%endif%}
+<h1>Reviews</h1>
+<b>(Reviewing reloads this game)</b>
+<form method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{form.as_p}}
+  <button type="submit" class="button">Submit</button>
+</form>
+<div class="comments">
+  {% for comment in comment %}
+   {% for i in comment.stars|times %}
+  <i class="bi bi-star-fill"></i>
+  {%endfor%}
+{% if comment.user.username != "aidan"  %}
+  <b>{{comment.user.get_full_name|title}}:</b>
+{%else%}
+   <b>Ajh:</b>
+  {%endif%}
+  <p>{{comment.comment |checker}}</p>
+  {% empty %}
+  
+  <h3>No Reviews</h3>
+  {%endfor%}
+  
+{% endblock %}

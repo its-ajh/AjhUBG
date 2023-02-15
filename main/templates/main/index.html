@@ -1,0 +1,29 @@
+{% extends "main/base.html" %}
+{% block content %}
+
+<div class="welcome">
+<h1>Welcome to Ajh Fun 2 <span class="wave">👋</span></h1>
+<p>This is the predecessor of both Ajh Fun and NBJG which is better than ever.</p>
+<p>
+I am not responsible for any ads in-game. This is not monetized..
+</p>
+<p>
+If you do encounter errors like "this repl is popular right now", "repl not available", etc., hard-refresh the page by pressing CTRL + SHIFT + R.
+</p>
+<p>
+* <strong>BEFORE YOU LOGIN, make sure it's at https://ajh-fun-2.ajh499.repl.co, otherwise it will NOT WORK and you CANNOT PLAY GAMES</strong>.
+</p>
+
+</div>
+<div id="gamewrapper">
+{% for data in data|dictsort:"name" %}
+  {% if not "Duck Life" in data.name %}
+    <a href="{% url "game" data.id%}">
+    <img src="{{ data.icon }}" style="max-width:100%;" />
+    <h4 class="text-wrap">{{data.name|truncatechars:20}}</h4>
+    </a>
+  {% endif %}
+{% endfor %}
+</div>
+
+{% endblock %}

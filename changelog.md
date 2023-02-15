@@ -1,5 +1,16 @@
-# 13 February 2023
+# 15 February 2023
+* Added Happy Wheels
 
+# 14 February 2023
+### 1.2
+* New home page design
+* Added game reviews
+
+### 1.1.5
+* Fixed Slope
+* Fixed Geometry Dash
+
+# 13 February 2023
 ### 1.1
 * Fixed login page not working
 * Fixed glitchy navigation bar

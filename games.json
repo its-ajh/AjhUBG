@@ -1,7 +1,7 @@
  [
     {
         "name": "Slope",
-        "url": "https://slope.ajh499.repl.co/",
+        "url": "https://yexex.github.io/slope/index.html",
         "icon": "/static/images/slope.png",
         "notes": "",
       "id": 0
@@ -267,9 +267,16 @@
     },
     {
         "name": "Geometry Dash",
-        "url": "https://turbowarp.org/105500895/fullscreen",
+        "url": "https://geometrydash.ajh499.repl.co",
         "icon": "/static/images/geometrydash.png",
         "notes": "",
       "id": 38
+    },
+    {
+        "name": "Happy Wheels",
+        "url": "https://nabilafk.github.io/happy-wheels/",
+        "icon": "/static/images/happywheels.png",
+        "notes": "",
+      "id": 30
     }
  ]
