@@ -1,3 +1,6 @@
+# 18 February 2023
+* Added Getaway Shootout, Papa's Pizzeria
+
 # 15 February 2023
 * Added Happy Wheels
 

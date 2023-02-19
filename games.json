@@ -277,6 +277,20 @@
         "url": "https://nabilafk.github.io/happy-wheels/",
         "icon": "/static/images/happywheels.png",
         "notes": "",
-      "id": 30
+      "id": 39
+    },
+    {
+        "name": "Papa's Pizzeria",
+        "url": "https://papaspizzeria.demonickatsu.repl.co/",
+        "icon": "/static/images/papaspizzeria.png",
+        "notes": "",
+      "id": 40
+    },
+    {
+        "name": "Getaway Shootout",
+        "url": "https://getawayshootout.github.io/",
+        "icon": "/static/images/getawayshootout.png",
+        "notes": "",
+      "id": 41
     }
  ]
