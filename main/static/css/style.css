@@ -11,16 +11,17 @@ html, body {
   margin: none;
   font-family: 'Hind Madurai', Verdana, Tahoma, sans-serif !important;
   scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 :root {
-  --primary: #0a0a0a;
+  --navbar: #0a0a0a;
   --secondary: #1e1e1e;
   --tertiary: #202020;
   --text: #fbfbfb;
   --text-accent: #9e9e9e;
   --text-colored: #d1b1fc;
-  --navbar: #040404;
+  --primary: #040404;
   --hyperlink-hover: #b785fa;
 }
 .login {
@@ -35,7 +36,6 @@ html, body {
   border: var(--secondary) solid;
   border-radius: 2em;
   text-align: center;
-  
 }
 i {
 color: var(--text);
@@ -68,7 +68,7 @@ margin: 0;
 }
 
 img {
-width: 9em;
+width: 8.5em;
 height: auto;
 border-radius: 1em;
 margin: 0.25em;
@@ -104,14 +104,16 @@ transform: scale(1);
 nav {
 display: flex;
 align-items: center;
-padding: 0.8em;
+padding: 0.5em;
 top: 0px;
+left: 0px;
+right: 0px;
 margin: 0px;
 background: var(--navbar);
 position: fixed;
 z-index: 1;
 width: 100%;
-font-size: 1.1em;
+font-size: 1em;
 }
 
 hr {
@@ -136,16 +138,18 @@ transition: color 0.5s ease;
 }
 
 .scrolldiv {
-width: 98%;
-margin: 0 auto;
-border-radius: 1em;
-padding: 1em;
-height: 60vh;
-overflow-x: hidden;
-overflow-y: scroll;
-text-align: left;
-align-self: center;
-border: solid 2px var(--text);
+	width: 98%;
+	margin: 0 auto;
+	padding: 3em;
+	height: 65vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	text-align: left;
+	align-self: center;
+  border: var(--secondary) solid;
+  border-radius: 2em;
+	max-width: 100%;
+	box-sizing: border-box;
 }
 
 nav > a:hover {
@@ -178,7 +182,7 @@ transform: translateY(0em);
 padding-left: 2em;
 padding-right: 2em;
 padding-bottom: 2em;
-padding-top: 5em;
+padding-top: 3.5em;
 margin: 0;
 }
 

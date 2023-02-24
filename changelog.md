@@ -1,5 +1,14 @@
+# 24 February 2023
+* Added Everskies
+
 # 18 February 2023
+### 1.2.5
 * Added Getaway Shootout, Papa's Pizzeria
+* Rebranded from Ajh Fun 2 to AjhUBG
+* Fixed a design flaw in the navigation, and also shrunk it
+* Updated the changelog and link containers' designs
+* Fixed a major issue regarding logins on other links
+* Swapped colours with the background and navigation bar
 
 # 15 February 2023
 * Added Happy Wheels

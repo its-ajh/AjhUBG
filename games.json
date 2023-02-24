@@ -292,5 +292,12 @@
         "icon": "/static/images/getawayshootout.png",
         "notes": "",
       "id": 41
+    },
+    {
+        "name": "Everskies",
+        "url": "https://everskies.com/",
+        "icon": "/static/images/everskies.png",
+        "notes": "",
+      "id": 42
     }
  ]
