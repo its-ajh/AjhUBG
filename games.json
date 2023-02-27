@@ -308,10 +308,17 @@
       "id": 43
     },
     {
-        "name": "Hurry!",
+        "name": "Wordle Unlimited",
         "url": "https://bosorioo.github.io/wordle-unlimited/",
         "icon": "/static/images/wordleunlimited.png",
         "notes": "",
       "id": 44
+    },
+    {
+        "name": "Chess.com",
+        "url": "https://chess.com",
+        "icon": "/static/images/chess.png",
+        "notes": "",
+      "id": 45
     }
  ]

@@ -1,5 +1,5 @@
 # 27 February 2023
-* Added Wordle Unlimited
+* Added Wordle Unlimited, Chess.com
 
 # 24 February 2023
 * Added Everskies, Hurry
