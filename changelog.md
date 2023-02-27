@@ -1,5 +1,8 @@
+# 27 February 2023
+* Added Wordle Unlimited
+
 # 24 February 2023
-* Added Everskies
+* Added Everskies, Hurry
 
 # 18 February 2023
 ### 1.2.5

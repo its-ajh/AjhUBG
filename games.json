@@ -299,5 +299,19 @@
         "icon": "/static/images/everskies.png",
         "notes": "",
       "id": 42
+    },
+    {
+        "name": "Hurry!",
+        "url": "https://hughsk.io/ludum-dare-27/",
+        "icon": "/static/images/hurry.png",
+        "notes": "",
+      "id": 43
+    },
+    {
+        "name": "Hurry!",
+        "url": "https://bosorioo.github.io/wordle-unlimited/",
+        "icon": "/static/images/wordleunlimited.png",
+        "notes": "",
+      "id": 44
     }
  ]
